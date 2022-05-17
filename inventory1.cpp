@@ -5,7 +5,7 @@
 //  Author: Naomi Igbinovia
 //  Installation: MTSU
 //  Remarks: This program reads in data from the "inventory.dat" to store
-//  its starting information of parts and theit quantites and displays them.
+//  its starting information of parts and their quantites and displays them.
 //  Then, "operations.dat" is read in to add onto or remove certain quantites
 //  from specific parts and the results are displayed again. The entire
 //  program is complied uisng a makefile.
