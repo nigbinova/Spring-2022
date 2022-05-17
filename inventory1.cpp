@@ -1,5 +1,5 @@
 //  ola5 by Naomi Igbinovia, CSCI 2170-004, Due: 03/26/2022
-//  Program ID: inventory.cpp + makefile / takes account of eahc part
+//  Program ID: inventory.cpp + makefile / takes account of each part
 //  and how much of each part and prints the content
 //  for title locations
 //  Author: Naomi Igbinovia
