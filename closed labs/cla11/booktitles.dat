@@ -1,0 +1,82 @@
+
+// the newline character is consumed
+    myIn.ignore(); 
+
+//  while the array size hasn't been met and there's a book title to read in
+    while ((size < SIZE) && getline(myIn, titles[size]))
+    {
+
+//  the size is counted
+        size++;
+    }
+}
+
+//  the display data function is defined
+void DisplayData (const string titles[], int size)
+{
+
+//  each title is given a location number and printed alongside said location number
+//  in the display
+    for (int i = 0; i < size; i++)
+    {
+        cout << i+1 << " : " << titles[i+1] << endl;
+    }
+}
+
+//  the sorting function is defined
+void SortTitles(string titles[], int size)
+{
+//  variables are defined
+    int minIndex;
+    string temp;
+
+//  before any titles are run through this for loop, the start of the array is set to 0
+    for (int i = 0; i < size -1; i++)
+    {
+        minIndex = i;
+// for every title that runs through the program after the start is initalized
+//  if the current title ranks higher than the current start of the array,
+//  the array is adjusted
+        for (int j = i + 1; j < size; j++)
+        {
+            if (titles[j] < titles[minIndex])
+                minIndex = j;
+        }
+//  if the minIndex doesn't match the start of the index, a temp string is brought
+//  in to fix it
+        if (minIndex != i)
+        {
+            temp = titles[minIndex];
+            titles[minIndex] = titles[i];
+            titles[i] = temp;
+        }
+    }
+}
+
+//  the linear search is defined
+int LinearSearch (const string titles[], int size, string toFind)
+{
+//  variables are defined and initalized
+    int position = -1;
+    bool found = false;
+    int index;
+
+    index=0;
+
+//  while the title is not found and the array hasn't reached the end of its size
+    while (!found && index < size)
+    {
+//  if the index matches the user string input, found is returned as true and the
+//   postion is set the found index
+        if (titles[index] == toFind)
+        {
+            found = true;
+            position = index;
+        }
+//  if not, the program is keeps looking for the user string input
+        index++;
+    }
+
+//at the end, the postion is either returned as the found postion or -1
+    return position;
+}
