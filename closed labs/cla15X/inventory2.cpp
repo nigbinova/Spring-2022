@@ -192,6 +192,7 @@ void DisplayList(NodePtr head)
     NodePtr cur;
 
     cur = head;
+    cout << "" << endl;
     cout << "The list of items are: " << endl;
     while (cur != NULL)
     {
