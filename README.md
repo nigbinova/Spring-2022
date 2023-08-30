@@ -1,9 +1,11 @@
 # CSCI-2170
 
+This repository includes the project I completed in CSCI 2170 - Computer Science II
+
 The following directories include:
 
-labs - TBC
+closed labs - These include all the C++ programs that were completed during in-class labs.
 
-project 1 - TBC
+open labs - These include all the C++ programs that were completed outside of class as assignments.
 
-project 2 - TBC
+projects - These include other programs I completed in my free time.
