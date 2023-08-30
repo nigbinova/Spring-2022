@@ -49,24 +49,26 @@ int main()
 //while there is a title to be read, the title, author, rating, month, day, year, and price will be read into the DisplayOneLine function to display all the information in the required format
     while (getline(myIn,title))
     {
-        getline(myIn, author);
+      getline(myIn, author);
+      
+      myIn >> rating;
+      myIn.ignore(100, '\n');
 
-        myIn >> rating;
-        myIn.ignore(100, '\n');
+      myIn >> month >> day >> year;
+      myIn.ignore(100, '\n'); 
 
-        myIn >> month >> day >> year;
+      myIn >> price;
+      myIn.ignore(100, '\n');
 
-        myIn >> price;
-        myIn.ignore(100,'\n');
+      DisplayOneLine(title, author, rating, price, year);
 
-        DisplayOneLine(title, author, rating, price, year);
-
-        count++;
+      count++;
     }
 //the input file is closed
     myIn.close();
 
 //the total count of books are displayed
+    count--;
     cout << "There are a total of " << count << " books." << endl;
     return 0;
 }
@@ -88,4 +90,5 @@ void DisplayOneLine(string title, string author, float rating, float price, int 
     << price << "\t" << year << endl;
     return;
 }
+
 
