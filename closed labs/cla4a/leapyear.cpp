@@ -25,7 +25,7 @@ int main()
 
 //while is run until no data is left in the file
     while (myIn >> year)
-    {:
+    {
 //if year is divisible by 4 but not 100, "yes" is the displayed output
         if (year % 4 == 0 && year % 100 != 0)
         {
