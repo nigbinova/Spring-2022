@@ -167,14 +167,14 @@ void RemoveParts(int count, struct parts tools[], string part, int  quant)
 //  the display data function is defined
 void DisplayData(struct parts tools[], int count)
 {
-//  a title prompt is displayed
-    cout << left << setw(10) << "Part" << left << setw(10) << "Quantity" << endl;
-    cout << '\n';
+    int labelWidth = 15;  // Adjust the label width as needed
 
-//  each part and its current quanity is displayed
+    cout << left << setw(labelWidth) << "Part" << setw(labelWidth) << "Quantity" << endl;
+    cout << "---------------------------" << endl;
+
     for (int i = 0; i < count; i++)
     {
-        cout << left << setw(10) << tools[i].name << left << setw(10) << tools[i].amount << endl;
+        cout << left << setw(labelWidth) << tools[i].name << setw(labelWidth) << tools[i].amount << endl;
     }
-    cout << '\n';
+    cout << '\n' << endl;
 }
