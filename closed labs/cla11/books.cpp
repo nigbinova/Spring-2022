@@ -100,7 +100,7 @@ void DisplayData (const string titles[], int size)
 //  in the display
     for (int i = 0; i < size; i++)
     {
-        cout << i+1 << " : " << titles[i] << endl;
+        cout << i+1 << " : " << titles[i+1] << endl;
     }
 }
 
