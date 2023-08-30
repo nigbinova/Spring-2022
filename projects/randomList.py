@@ -1,6 +1,6 @@
 import random
 
-#This program creates a list, prints a random index from the list, and prints all the index values that weren't randomly picked.
+# This program creates a list, prints a random index from the list, and prints all the index values that weren't randomly picked.
 print("")
 
 list1 = [2,4,6,8,10]
