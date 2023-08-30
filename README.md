@@ -1,6 +1,6 @@
 # CSCI-2170
 
-This repository includes the project I completed in CSCI 2170 - Computer Science II
+This repository includes the project I completed in CSCI 2170 - Computer Science II.
 
 The following directories include:
 
